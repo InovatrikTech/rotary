@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS past_presidents (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  year VARCHAR(20),
+  bio TEXT,
+  image_url TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 

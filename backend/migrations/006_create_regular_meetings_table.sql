@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS regular_meetings (
+  id SERIAL PRIMARY KEY,
+  day VARCHAR(100) NOT NULL,
+  time VARCHAR(100) NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  address VARCHAR(255),
+  description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+); 
